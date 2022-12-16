@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap');
+
+body {
+    display: grid;
+    grid-template-areas:
+    'header'
+    'main'
+    'footer';
+}
+
+.header {
+    grid-area: header;
+    padding: 5% 7%;
+    background-image: url(../images/desktop/image-hero.jpg);
+    height: 40.6rem;
+}
+
+.header-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 9.3rem;
+}
+
+.header-menu ul {
+    display: flex;
+    gap: 2.5rem;
+    position: relative;
+}
+
+.header-menu ul a {
+    color: var(--white);
+    font-family: 'Alata', sans-serif;
+    margin-bottom: 1.25rem;
+}
+
+.header-menu ul a:hover {
+    text-decoration: underline;
+}
+
+.header h1 {
+    font-size: 4rem;
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: uppercase;
+    padding: 2.5rem 6.25rem 2.5rem 2.5rem;
+    border: 3px solid var(--white);
+    align-self: flex-start;
+    width: fit-content;
+    color: var(--white);
+    font-weight: 400;
+}
+
+.main {
+    grid-area: main;
+    padding: 7%;
+}
+
+.interactive {
+    position: relative;
+    margin-bottom: 10.6rem;
+}
+
+.img-mobile {
+    display: none;
+}
+
+.interactive div {
+    padding: 4.3rem;
+    background-color: var(--white);
+    position: absolute;
+    right: 0;
+    top: 50%;
+    width: 50%;
+}
+
+.interactive div h2 {
+    text-transform: uppercase;
+    margin-bottom: 1.8rem;
+    font-size: 3rem;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+}
+
+.interactive div p {
+    font-family: 'Alata', sans-serif;
+    color: var(--dark-gray);
+    font-size: 0.9rem;
+}
+
+.creations div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-transform: uppercase;
+    margin-bottom: 3.1rem;
+}
+
+.creations div h2 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.creations a {
+    font-family: 'Alata', sans-serif;
+    font-weight: 400;
+    padding: 0.6rem 1.8rem;
+    border: 1px solid var(--black);
+    transition: 0.3s;
+    justify-self: flex-start;
+}
+
+.link-mobile a {
+    display: none;
+}
+
+.creations a:hover {
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.creations .works {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 2.5rem;
+}
+
+.creations h3 {
+    text-transform: uppercase;
+    color: var(--white);
+    font-size: 2.2rem;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+    align-self: flex-end;
+}
+
+.creations article {
+    height: 28.1rem;
+    width: 100%;
+    padding: 1.8rem;
+    display: flex;
+    align-items: flex-end;
+}
+
+.deep {
+    background-image: url(../images/desktop/image-deep-earth.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.night {
+    background-image: url(../images/desktop/image-night-arcade.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.soccer {
+    background-image: url(../images/desktop/image-soccer-team.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.grid {
+    background-image: url(../images/desktop/image-grid.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.from {
+    background-image: url(../images/desktop/image-from-above.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.pocket {
+    background-image: url(../images/desktop/image-pocket-borealis.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.curiosity {
+    background-image: url(../images/desktop/image-curiosity.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.make {
+    background-image: url(../images/desktop/image-fisheye.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+.footer {
+    padding: 5% 7%;
+    background-color: var(--black);
+}
+
+.footer-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.footer-menu div {
+    display: flex;
+    gap: 0.6rem;
+}
+
+.footer-menu a {
+    color: var(--white);
+    font-size: 2rem;
+}
+
+.info {
+    font-family: 'Alata', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.info ul {
+    display: flex;
+    gap: 2.5rem;
+}
+
+.info ul a {
+    color: var(--white);
+}
+
+.info span {
+    color: var(--very-dark-gray);
+}
+
+.section-mobile {
+    display: none;
+}
+
+input {
+    display: none;
+}
