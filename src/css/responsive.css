@@ -377,56 +377,12 @@
         width: auto;
     }
 
+
+
     .creations .works {
         grid-template-columns: 1fr;
         justify-items: center;
         margin-bottom: 1.8rem;
-    }
-
-    .deep {
-        background-image: url(../images/mobile/image-deep-earth.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    
-    .night {
-        background-image: url(../images/mobile/image-night-arcade.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    
-    .soccer {
-        background-image: url(../images/mobile/image-soccer-team.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    
-    .grid {
-        background-image: url(../images/mobile/image-grid.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    
-    .from {
-        background-image: url(../images/mobile/image-from-above.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    
-    .pocket {
-        background-image: url(../images/mobile/image-pocket-borealis.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    
-    .curiosity {
-        background-image: url(../images/mobile/image-curiosity.jpg);
-        background-repeat: no-repeat;
-    }
-    
-    .make {
-        background-image: url(../images/mobile/image-fisheye.jpg);
-        background-repeat: no-repeat;
     }
 
     .creations div {
@@ -451,6 +407,7 @@
 
     .creations h3 {
         font-size: 1.5rem;
+        bottom: 10%;
     }
 
     .section-desktop {

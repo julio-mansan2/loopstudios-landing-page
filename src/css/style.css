@@ -32,10 +32,29 @@ body {
     color: var(--white);
     font-family: 'Alata', sans-serif;
     margin-bottom: 1.25rem;
+    position: relative;
 }
 
-.header-menu ul a:hover {
-    text-decoration: underline;
+.link-footer {
+    position: relative;
+}
+
+.link-footer::after,
+.link-header::after {
+    content: "";
+    width: 1.8rem;
+    height: 0.2rem;
+    background-color: transparent;
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all 100ms;
+}
+
+.link-footer:hover::after,
+.link-header:hover::after {
+    background-color: var(--white);
 }
 
 .header h1 {
@@ -58,10 +77,6 @@ body {
 .interactive {
     position: relative;
     margin-bottom: 10.6rem;
-}
-
-.img-mobile {
-    display: none;
 }
 
 .interactive div {
@@ -101,7 +116,7 @@ body {
     font-weight: 400;
 }
 
-.creations a {
+.creations .see-works {
     font-family: 'Alata', sans-serif;
     font-weight: 400;
     padding: 0.6rem 1.8rem;
@@ -114,7 +129,7 @@ body {
     display: none;
 }
 
-.creations a:hover {
+.creations .see-works:hover {
     background-color: var(--black);
     color: var(--white);
 }
@@ -128,66 +143,38 @@ body {
 .creations h3 {
     text-transform: uppercase;
     color: var(--white);
-    font-size: 2.2rem;
+    font-size: 1.5rem;
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 300;
     align-self: flex-end;
+    position: absolute;
+    left: 7%;
+    bottom: 7%;
+    z-index: 2;
 }
 
 .creations article {
-    height: 28.1rem;
-    width: 100%;
-    padding: 1.8rem;
     display: flex;
-    align-items: flex-end;
+    width: 100%;
+    flex-direction: column;
+    position: relative;
 }
 
-.deep {
-    background-image: url(../images/desktop/image-deep-earth.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+.creations article::after {
+    content: "";
+    inset: 0;
+    position: absolute;
+    background: linear-gradient(180deg, transparent 50%, #000b);
 }
 
-.night {
-    background-image: url(../images/desktop/image-night-arcade.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+.creations article:hover::after {
+    cursor: pointer;
+    background: linear-gradient(180deg, #fff, #000b);
 }
 
-.soccer {
-    background-image: url(../images/desktop/image-soccer-team.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.grid {
-    background-image: url(../images/desktop/image-grid.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.from {
-    background-image: url(../images/desktop/image-from-above.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.pocket {
-    background-image: url(../images/desktop/image-pocket-borealis.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.curiosity {
-    background-image: url(../images/desktop/image-curiosity.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.make {
-    background-image: url(../images/desktop/image-fisheye.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+.creations img {
+    width: 100%;
+    height: 100%;
 }
 
 .footer {
@@ -214,6 +201,7 @@ body {
 .footer-menu a {
     color: var(--white);
     font-size: 2rem;
+    position: relative;
 }
 
 .info {
