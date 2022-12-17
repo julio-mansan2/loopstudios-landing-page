@@ -25,11 +25,11 @@
                 </label>
                 
                 <ul id="menu_box">
-                    <li><a href="/">About</a></li>
-                    <li><a href="">Carrers</a></li>
-                    <li><a href="">Events</a></li>
-                    <li><a href="">Products</a></li>
-                    <li><a href="">Support</a></li>
+                    <a href="/" class="link-header"><li>About</li></a>
+                    <a href="/" class="link-header"><li>Carrers</li></a>
+                    <a href="/" class="link-header"><li>Events</li></a>
+                    <a href="/" class="link-header"><li>Products</li></a>
+                    <a href="/" class="link-header"><li>Support</li></a>
                 </ul>
             </nav>
         </section>
@@ -39,8 +39,10 @@
     </header>
     <main class="main">
         <section class="interactive">
-            <img src="./src/images/desktop/image-interactive.jpg" aria-hidden="true" class="img-desktop">
-            <img src="./src/images/mobile/image-interactive.jpg" aria-hidden="true" class="img-mobile">
+            <picture>
+                <img src="./src/images/mobile/image-interactive.jpg" class="img-mobile" aria-hidden="true">
+                <source srcset="./src/images/desktop/image-interactive.jpg" media="(min-width:1200px)">
+            </picture>
             <div>
                 <h2>The leader in <br> interactive VR</h2>
                 <p>Founded in 2011, Loopstudios has been producing world-class virtual reality projects for some of the best companies around the globe. Our award-winning creations have transformed businesses through digital experiences that bind to their brand.</p>
@@ -49,36 +51,84 @@
         <section class="creations">
             <div>
                 <h2>Our creations</h2>
-                <a href="/" class="link-desktop">S e e &nbsp &nbsp a l l</a>
+                <a href="/" class="link-desktop see-works">S e e &nbsp &nbsp a l l</a>
             </div>
             <section class="works">
                 <article class="deep">
+                <a href="">
+                    <picture>
+                        <source srcset="./src/images/desktop/image-deep-earth.jpg" media="(min-width:1200px)">
+                        <img src="./src/images/mobile/image-deep-earth.jpg" alt="image-deep-earth">
+                    </picture>
                     <h3>Deep earth</h3>
+                </a>    
                 </article>
                 <article class="night">
-                    <h3>Night arcade</h3>
+                    <a href="">
+                        <picture>
+                            <source srcset="./src/images/desktop/image-night-arcade.jpg" media="(min-width:1200px)">
+                            <img src="./src/images/mobile/image-night-arcade.jpg" aria-hidden="true">
+                        </picture>
+                        <h3>Night arcade</h3>
+                    </a>
                 </article>
                 <article class="soccer">
-                    <h3>Soccer team vr</h3>
+                    <a href="">
+                        <picture>
+                            <source srcset="./src/images/desktop/image-soccer-team.jpg" media="(min-width:1200px)">
+                            <img src="./src/images/mobile/image-soccer-team.jpg" alt="image-soccer-team">
+                        </picture>
+                        <h3>Soccer team vr</h3>
+                    </a>
                 </article>
                 <article class="grid">
-                    <h3>The grid</h3>
+                    <a href="">
+                        <picture>
+                            <source srcset="./src/images/desktop/image-grid.jpg" media="(min-width:1200px)">
+                            <img src="./src/images/mobile/image-grid.jpg" alt="image-grid">
+                        </picture>
+                        <h3>The grid</h3>
+                    </a>
                 </article>
                 <article class="from">
-                    <h3>From up <br> above vr</h3>
+                    <a href="">
+                        <picture>
+                            <source srcset="./src/images/desktop/image-from-above.jpg" media="(min-width:1200px)">
+                            <img src="./src/images/mobile/image-from-above.jpg" alt="image-from-above">
+                        </picture>
+                        <h3>From up <br> above vr</h3>
+                    </a>
                 </article>
                 <article class="pocket">
-                    <h3>Pocket borealis</h3>
+                    <a href="">
+                        <picture>
+                            <source srcset="./src/images/desktop/image-pocket-borealis.jpg" media="(min-width:1200px)">
+                            <img src="./src/images/mobile/image-pocket-borealis.jpg" alt="image-pocket-borealis">
+                        </picture>
+                        <h3>Pocket borealis</h3>
+                    </a>
                 </article>
                 <article class="curiosity">
-                    <h3>The curiosity</h3>
+                    <a href="">
+                        <picture>
+                            <source srcset="./src/images/desktop/image-curiosity.jpg" media="(min-width:1200px)">
+                            <img src="./src/images/mobile/image-curiosity.jpg" alt="image-curiosity">
+                        </picture>
+                        <h3>The curiosity</h3>
+                    </a>
                 </article>
                 <article class="make">
+                    <a href="">
+                        <picture>
+                        <source srcset="./src/images/desktop/image-fisheye.jpg" media="(min-width:1200px)">
+                        <img src="./src/images/mobile/image-fisheye.jpg" alt="image-fisheye">
+                    </picture>
                     <h3>Make it fisheye</h3>
+                    </a>
                 </article>
             </section>
                 <div class="link-mobile">
-                    <a href="/" >S e e &nbsp &nbsp a l l</a>
+                    <a href="/" class=".see-works">S e e &nbsp &nbsp a l l</a>
                 </div>
         </section>
     </main>
@@ -86,27 +136,27 @@
         <section class="footer-menu section-desktop">
             <img src="./src/images/logo.svg" alt="Logo Loopstudios">
             <div>
-                <a href="/">
+                <a href="/" class="link-footer">
                     <i class="fab fa-fw fa-facebook-square"></i>
                 </a>
-                <a href="/">
+                <a href="/" class="link-footer">
                     <i class="fab fa-fw fa-twitter"></i>
                 </a>
-                <a href="/">
+                <a href="/" class="link-footer">
                     <i class="fab fa-fw fa-pinterest"></i>
                 </a>
-                <a href="/">
+                <a href="/" class="link-footer">
                     <i class="fab fa-fw fa-instagram"></i>
                 </a>
             </div>
         </section>
         <section class="info section-desktop">
             <ul>
-                <li><a href="/">About</a></li>
-                <li><a href="">Carrers</a></li>
-                <li><a href="">Events</a></li>
-                <li><a href="">Products</a></li>
-                <li><a href="">Support</a></li>
+                <a href="/" class="link-footer"><li>About</li></a>
+                <a href="/" class="link-footer"><li>Carrers</li></a>
+                <a href="/" class="link-footer"><li>Events</li></a>
+                <a href="/" class="link-footer"><li>Products</li></a>
+                <a href="/" class="link-footer"><li>Support</li></a>
             </ul>
             <span>© 2021 Loopstudios. All rights reserved.</span>
         </section>
